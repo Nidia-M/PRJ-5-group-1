@@ -5,8 +5,8 @@
 /* Changing the main font and background colour */
 
 body {
-	font-family: Raleway, sans-serif;
-	background-color: #fffcf8;
+    font-family: Raleway, sans-serif;
+    background-color: #000000;
 }
 
 /* Changing the background colour for the header */
@@ -18,7 +18,7 @@ header {
 /* Changing the background color for the navigation bar */
 
 .navbar {
-	background-color: #fff0e0;
+    background-color: #1c35d8;
 }
 
 /* Effect on social media buttons */
@@ -42,3 +42,256 @@ footer a:hover {
 		0 0 .2em white,
 		0 0 .5em white;
 }
+
+/* headings */
+h1, h2, h3 {
+    font-family: 'Hardrock', sans-serif;
+}
+
+/* specific classes */
+.title {
+    font-family: 'Hardrock', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF
+}
+
+.subtitle {
+    font-family: 'Hardrock', sans-serif;
+    font-size: 20px;
+    color: #ff4500; /* A fiery color */
+}
+
+body {
+    color: #FFFFFF
+}
+ 
+/* font */
+.pirata-one-regular {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Hardrock {font-family: 'Hardrock', sans-serif;}
+
+.full-width-title {
+  width: 100%;
+  font-size: clamp(2rem, 5vw, 5rem); /* responsive size */
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/*that video that does not work so here i am still trying TT*/
+.hero {
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba (12,3,51,0.3), rgba(12,3,51, 0.3)); position: relative;
+padding: 0 5%; display: flex;
+align-items: center;
+justify-content: center;
+}
+
+nav{
+width: 100%;
+position: absolute;
+top: 0; 
+left: 0;
+padding: 20px 8%; 
+display: flex;
+align-items: center; 
+justify-content: space-between;
+}
+
+
+
+nav .logo { 
+	width: 80px; }
+
+nav ul li{
+list-style: none;
+display: inline-block;
+margin-left: 40px;
+
+}
+
+naviul li a{
+text-decoration: none;
+color: #fff ;
+font-size: 17px;}
+
+
+/* video */
+
+header {
+  position: relative;
+  background-color: black;
+  height: 150vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+	margin: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+
+/* video */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen */
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  object-fit: cover;
+}
+
+.video-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 40%;
+}
+
+
+
+.white { }
+                                                
+/* foto */
+.fixed-bg {
+    background-image: url("../images/woman peeks above crowd.png");
+    background-attachment: fixed;
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Foreground Content */
+.content {
+    background-color: rgba(0, 0, 0, 0.5); /* optional dark overlay */
+    padding: 80px;
+    border-radius: 10px;
+	width: 100%;
+}
+
+/* Extra section so you can scroll */
+.regular-section {
+    padding: 100px 20px;
+    background-color: #111;
+    color: white;
+}
+
+/* join for updates */
+/* Makes the background image stay still */
+.join-section {
+  background-image: url('your-image.jpg'); /* Replace with your image file */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  text-align: center;
+}
+
+/* The box that holds the text and form */
+.content-box {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+/* The form elements */
+input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 60%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff6b6b;
+}
+
+                       
