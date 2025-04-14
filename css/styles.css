@@ -348,7 +348,7 @@ body, html {
 
 
 
-.white { }
+.white {color: #FFFFFF }
                                                 
 /* foto */
 .fixed-bg {
@@ -392,6 +392,57 @@ body, html {
   color: white;
   text-align: center;
 }
+
+
+/*cards carousel*/
+.scroll-section {
+  background-color: #000; /* Black background like your site */
+  padding: 2rem 0;
+  overflow-x: auto;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.scroll-card {
+  min-width: 200px;
+  max-width: 200px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.scroll-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.scroll-card p {
+  margin: 0.5rem;
+  font-weight: bold;
+}
+
+
+
+
+
+
 
 
 /*glow text events*/
