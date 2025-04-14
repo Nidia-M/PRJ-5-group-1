@@ -31,70 +31,53 @@
 
   </head>
 	
-  <body class="h-100 d-flex flex-column">
-
-    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="screenshot fireshpere.png" width="90" alt="Fire Sphere">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="example.html">Example</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                UX Patterns
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="hero.html">Hero Section</a></li>
-                <li><a class="dropdown-item" href="carousel.html">Carousel</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="two-columns.html">Two-column Layout</a></li>
-                <li><a class="dropdown-item" href="cards.html">Cards</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://buas-media-interactive.github.io/prj4-guide/" target="_blank">PRJ4 Guide</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="corporate.html">Corporate</a>
-            </li>
-          </ul>
-        </div>
+  <body>
+	  
+	  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg py-3">
+	  
+   
+		<div class="container-fluid justify-content-between">
+      <a class="navbar-brand ms-5" href="#">
+         <img src="images/logo fire_sphere.png" width="200" alt="Fire Sphere">
+      </a>
+      <div class="d-flex me-5">
+        <a class="nav-link mx-3" href="#">HOME</a>
+        <a class="nav-link mx-3" href="#">ABOUT US</a>
+        <a class="nav-link mx-3" href="corporate.html">CORPORATE</a>
+        <a class="nav-link mx-3" href="#">EVENTS!</a>
       </div>
-    </nav>
-    <!-- End of navigation bar -->
-	  
-	  
-	  
-	  <div class="hero">
-	  		<nav> <img src="logo fire_sphere.png" class="1ogo" alt="logo" height="50" >
-<ul>
-	<li><a href="#" >HOME</a></li>
-	<li><a href="#">BEACHES</a></li>
-	<li><a href="#">POPULAR PLACES</a></li>
-	<li><a href="#">HOME</a></li>
-</ul>
-</nav>
-		  
-	  
-	  
-	  
-	  </div>
-	  
-	  
-	  
+	 </div>
+  </nav>
 
-    <!-- Start of main placeholder in landing page -->
+  <!-- VIDEO SECTION -->
+  <div class="video-container">
+    <button class="video-toggle nav-link" onclick="toggleVideo()">Pause</button>
+    <video autoplay muted loop id="heroVideo">
+      <source src="images/C0870.MP4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <img src="images/logo fire_sphere.png" alt="Overlay Logo" class="overlay-logo">
+    <button class="overlay-button nav-link mb-5" onclick="location.href='#events'" href="#events">GO TO EVENTS!</button>
+  </div>
+
+  <!-- JavaScript to toggle video playback -->
+  <script>
+    const video = document.getElementById('heroVideo');
+    const toggleBtn = document.querySelector('.video-toggle');
+
+    function toggleVideo() {
+      if (video.paused) {
+        video.play();
+        toggleBtn.textContent = 'Pause';
+      } else {
+        video.pause();
+        toggleBtn.textContent = 'Play';
+      }
+    }
+  </script>
+
+  <!-- Start of main placeholder in landing page -->
     
 	  <header>
 
@@ -103,7 +86,7 @@
 
   <!-- The HTML5 video element that will create the background video on the header -->
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4" type="video/mp4">
+    <source src="images/C0870.MP4" type="video/mp4">
   </video>
 
   <!-- The header content -->
@@ -135,7 +118,7 @@
 	  
 		<main class="h-100 d-flex flex-column justify-content-center align-items-center mt-5 pt-5">
 
-      <img class="mb-6" src="logo fire_sphere.png" width="100%" alt="FireSphere logo">
+      <img class="mb-6" src="images/logo fire_sphere.png" width="100%" alt="FireSphere logo">
 		
 		 <div class="video-background">
     <video autoplay muted loop playsinline>
@@ -196,10 +179,11 @@
         </div>
     </section>
 
-   <section class="regular-section">
-        <h2>More Content</h2>
-        <p>More content bla.</p>
-   </section>
+<section class="regular-section">
+  <h1 id="events" class="d-flex justify-content-center align-items-		center glowing-text full-width-title">EVENTS</h1>
+  <p>More content bla.</p>
+</section>
+
 	  
 	   <main class="container-fluid my-4">
       <div class="row g-3 justify-content-evenly">
@@ -248,16 +232,38 @@
 		   </div>
 		  </main>
 	  
-	  <section class="join-section">
-  <div class="content-box">
-    <h2 class="full-width-title">Ready to Rock?</h2>
+	  
+	  
+	   <section class="fixed-bg justify-content-center align-items-center"> 
+	  
+  <div class="content">
+    <h2 class="full-width-title glowing-text">Ready to Rock?</h2>
     <p>Join the Fire Sphere community and never miss a hard rock event again!</p>
-    <form>
-      <input type="email" placeholder="Your email" required>
-      <button type="submit">Join</button>
+    <form class="d-flex justify-content-center align-items-center">
+      <input type="email" placeholder="Your email" required >
+      <button type="submit" class="nav-link">Join</button>
     </form>
   </div>
+		  
 </section>
+
+	  
+	   <!-- A footer with socials -->
+    <footer class="shadow-lg mt-auto py-4 bg-body">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p>
+          © 2020&ndash;2024 &mdash; Breda University of Applied Sciences
+        </p>
+        <ul class="list-unstyled d-flex align-items-center opacity-75">
+          <li>
+            <a href="https://www.instagram.com/bredauniversityas/" target="_blank">
+              <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- End of the footer -->
 
 	  
   </body>

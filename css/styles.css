@@ -18,7 +18,7 @@ header {
 /* Changing the background color for the navigation bar */
 
 .navbar {
-    background-color: #1c35d8;
+    background-color: #000000;
 }
 
 /* Effect on social media buttons */
@@ -66,6 +66,8 @@ h1, h2, h3 {
 body {
     color: #FFFFFF
 }
+
+.white{color: #FFFFFF}
  
 /* font */
 .pirata-one-regular {
@@ -86,6 +88,119 @@ body {
   color: white;
   text-transform: uppercase;
 }
+
+
+/*corporate page*/
+header.py-2.py-md-4.py-lg-5.text-center.container-fluid.bg-gradient.text-light.mb-1.ai-style-change-1 {
+  max-height: 100px;
+  padding: 0px;
+  max-width: 100%;
+}
+
+#navbar-corporate {
+  display: block;
+}
+
+#navbar-corporate nav {
+  position: static;
+}
+
+header.py-2.py-md-4.py-lg-5.text-center.container-fluid.bg-gradient.text-light.mb-1 {
+  min-height: 100px;
+  max-height: 100px;
+  padding: 12px;
+  max-width: 100%;
+}
+
+nav#navbar-corporate {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+nav#navbar-corporate > * { /* Selects all direct children of nav#navbar-corporate */
+  display: block;
+  width: 100%;
+}
+
+
+
+
+/* Make video full width and height */
+nav {
+      background-color: #000000;
+    }
+
+  .nav-link {
+      color: black;
+      background-color: white;
+      border-radius: 25px;
+      padding: 10px 20px;
+      margin: 5px;
+      font-weight: bold;
+    }
+
+  .nav-link:hover {
+      background-color: #C52B10;
+    }
+
+  .logo {
+      height: 60px;
+	  width: 200px;
+    }
+
+  .video-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+  video {
+      width: 100%;
+      height: auto;
+    }
+
+  .overlay-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 80%;
+      height: auto;
+    }
+
+  .overlay-button {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      color: black;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-weight: bold;
+      border: none;
+    }
+
+.overlay-button:hover{
+	background: #c52b10
+}
+
+  .video-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+      background-color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+
+
+
+
 
 /*that video that does not work so here i am still trying TT*/
 .hero {
@@ -169,6 +284,20 @@ header .overlay {
   z-index: 1;
 }
 
+.container.h-100 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  position: relative;
+}
+
 /* Media Query for devices withi coarse pointers and no hover functionality */
 
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
@@ -228,7 +357,7 @@ body, html {
     background-position: center;
     /*background-repeat: no-repeat;*/
     background-size: cover;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,12 +371,13 @@ body, html {
     padding: 80px;
     border-radius: 10px;
 	width: 100%;
+	height: 100%;
 }
 
 /* Extra section so you can scroll */
 .regular-section {
     padding: 100px 20px;
-    background-color: #111;
+    background-color: #000000;
     color: white;
 }
 
@@ -263,13 +393,31 @@ body, html {
   text-align: center;
 }
 
+
+/*glow text events*/
+.glowing-text {
+  color: white;
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.glowing-text:hover {
+  text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple;
+  color: white;
+}
+
+
+
+
+
 /* The box that holds the text and form */
 .content-box {
   background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
-  padding: 30px;
-  max-width: 500px;
+  padding: 20px;
+  max-width: 100%;
+  max-height: none;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 0px;
 }
 
 /* The form elements */
@@ -294,4 +442,4 @@ button:hover {
   background-color: #ff6b6b;
 }
 
-                       
+
