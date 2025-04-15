@@ -127,22 +127,29 @@ nav#navbar-corporate > * { /* Selects all direct children of nav#navbar-corporat
 
 
 /* Make video full width and height */
-nav {
-      background-color: #000000;
-    }
+.nav-link {
+  color: black;
+  background-color: white;
+  color: #000000; 
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+  text-decoration: none; /* for <a> tags */
+  transition: background-color 0.3s, color 0.3s;
+font-family: 'Hardrock', sans-serif;
+}
 
-  .nav-link {
-      color: black;
-      background-color: white;
-      border-radius: 25px;
-      padding: 10px 20px;
-      margin: 5px;
-      font-weight: bold;
-    }
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #C52B10;
+  color: white;
+}
 
-  .nav-link:hover {
-      background-color: #C52B10;
-    }
+.nav-link:active {
+  color: black;
+  background-color: white;
+}
 
   .logo {
       height: 60px;
@@ -438,22 +445,101 @@ body, html {
   font-weight: bold;
 }
 
+.scroll-card:hover {
+  box-shadow: 0 0 20px 5px #702bc5;
+  outline: 2px solid #702bc5;
+  transition: box-shadow 0.3s ease, outline 0.3s ease;
+  z-index: 1;
+}
+
+.card-footer {
+  background-color: #702bc5;
+  padding: 1rem;
+  text-align: right;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card-footer:hover {
+  background-color: #ffffff;}
+
+.card-title{
+	color: #1c35d8;
+	font-family: 'Pirata One', system-ui;
+}
+
+.gradient-div {
+  background: linear-gradient(to bottom, black 0%, red 50%, black 100%);
+  height: 600px; /* adjust as needed */
+  width: 100%;   /* full width */
+}
 
 
 
 
-
-
-
-/*glow text events*/
 .glowing-text {
   color: white;
-  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+  text-shadow: 
+    0 0 10px #c52b10,
+    0 0 20px #c52b10,
+    0 0 40px #c52b10,
+    0 0 60px #c52b10,
+    0 0 80px #c52b10;
   transition: text-shadow 0.3s ease, color 0.3s ease;
 }
 
 .glowing-text:hover {
-  text-shadow: 0 0 10px purple, 0 0 20px purple, 0 0 30px purple;
+  text-shadow: 
+    0 0 10px #702bc5,
+    0 0 20px #702bc5,
+    0 0 40px #702bc5,
+    0 0 60px #702bc5,
+    0 0 80px #702bc5;
+  color: white;
+}
+
+
+.glowing-texta {
+  color: white;
+  text-shadow: 
+    0 0 10px #702bc5,
+    0 0 20px #702bc5,
+    0 0 40px #702bc5,
+    0 0 60px #702bc5,
+    0 0 80px #702bc5;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.glowing-texta:hover {
+  text-shadow: 
+    0 0 10px #c52b10,
+    0 0 20px #c52b10,
+    0 0 40px #c52b10,
+    0 0 60px #c52b10,
+    0 0 80px #c52b10;
+  color: white;
+}
+
+
+
+.glowing-textb {
+  color: white;
+  text-shadow: 
+    0 0 10px #1c35d8,
+    0 0 20px #1c35d8,
+    0 0 40px #1c35d8,
+    0 0 60px #1c35d8,
+    0 0 80px #1c35d8;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.glowing-textb:hover {
+  text-shadow: 
+    0 0 10px #702bc5,
+    0 0 20px #702bc5,
+    0 0 40px #702bc5,
+    0 0 60px #702bc5,
+    0 0 80px #702bc5;
   color: white;
 }
 
@@ -491,6 +577,29 @@ button {
 
 button:hover {
   background-color: #ff6b6b;
+}
+
+
+/*glowing mouse glowing cursor*/
+
+.glow-area {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.cursor-light {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  background: radial-gradient(circle, #1c35d8 0%, transparent 80%);
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  opacity: 0.4;
+  transition: top 0.05s ease, left 0.05s ease;
 }
 
 
