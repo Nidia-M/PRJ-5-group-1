@@ -123,6 +123,29 @@ nav#navbar-corporate > * { /* Selects all direct children of nav#navbar-corporat
   width: 100%;
 }
 
+  table {
+    width: 0px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: Arial, sans-serif;
+  }
+
+  th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #c91700;
+  }
+
+  caption {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: bold;
+	color: #ffffff
+  }
 
 
 
