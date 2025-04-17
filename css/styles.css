@@ -147,6 +147,20 @@ nav#navbar-corporate > * { /* Selects all direct children of nav#navbar-corporat
 	color: #ffffff
   }
 
+.values-container p {
+  text-align: center;
+}
+
+.rock-block {
+  background-color: #c91700;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+	
 
 
 /* Make video full width and height */
