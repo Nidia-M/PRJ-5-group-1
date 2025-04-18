@@ -68,6 +68,8 @@ body {
 }
 
 .white{color: #FFFFFF}
+
+.black{color: #000000}
  
 /* font */
 .pirata-one-regular {
@@ -398,6 +400,20 @@ body, html {
 /* foto */
 .fixed-bg {
     background-image: url("../images/woman peeks above crowd.png");
+    background-attachment: fixed;
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.fixed-bga {
+    background-image: url("../images/blog_hardrock.jpg.jxl");
     background-attachment: fixed;
     background-position: center;
     /*background-repeat: no-repeat;*/
