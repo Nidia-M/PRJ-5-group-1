@@ -31,34 +31,35 @@
 
   </head>
 	
-  <body>
+  <body class="h-100 d-flex flex-column">
 	  
 	  <!-- NAVIGATION BAR -->
   <nav class="navbar navbar-expand-lg py-3">
-	  
-   
-		<div class="container-fluid justify-content-between">
-      <a class="navbar-brand ms-5" href="#">
-         <img src="images/logo fire_sphere.png" width="200" alt="Fire Sphere">
+    <div class="container-fluid justify-content-between">
+		
+      <a class="navbar-brand" href="#">
+        <img src="images/logo fire_sphere.png" alt="FireSphere Logo" class="logo mx-1 container-">
       </a>
-      <div class="d-flex me-5">
-        <a class="nav-link mx-3" href="#">HOME</a>
-        <a class="nav-link mx-3" href="#">ABOUT US</a>
-        <a class="nav-link mx-3" href="corporate.html">CORPORATE</a>
-        <a class="nav-link mx-3" href="#">EVENTS!</a>
+		<center>
+      <div class="d-flex">
+        <a class="nav-link" href="#">HOME</a>
+        <a class="nav-link" href="#">ABOUT US</a>
+        <a class="nav-link" href="#">CORPORATE</a>
+        <a class="nav-link" href="#">EVENTS!</a>
       </div>
-	 </div>
+			</center>
+    </div>
   </nav>
 
   <!-- VIDEO SECTION -->
   <div class="video-container">
-    <button class="video-toggle nav-link" onclick="toggleVideo()">Pause</button>
+    <button class="video-toggle" onclick="toggleVideo()">Pause</button>
     <video autoplay muted loop id="heroVideo">
-      <source src="" type="video/mp4">
+      <source src="images/C0870.MP4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
     <img src="images/logo fire_sphere.png" alt="Overlay Logo" class="overlay-logo">
-    <button class="overlay-button nav-link mb-5" onclick="location.href='#events'" href="#events">GO TO EVENTS!</button>
+    <button class="overlay-button" onclick="location.href='#events'">GO TO EVENTS!</button>
   </div>
 
   <!-- JavaScript to toggle video playback -->
@@ -77,11 +78,73 @@
     }
   </script>
 
-  
+
+	  <section class="regular-section">
+        <h2>More Content</h2>
+		  <p>BLA</p>
+	  </section>
+	  
+	  
+	  <div class="hero">
+	  		<nav> <img src="logo fire_sphere.png" class="1ogo" alt="logo" height="50" >
+<ul>
+	<li><a href="#" >HOME</a></li>
+	<li><a href="#">BEACHES</a></li>
+	<li><a href="#">POPULAR PLACES</a></li>
+	<li><a href="#">HOME</a></li>
+</ul>
+</nav>
+		  
+	  
+	  
+	  
+	  </div>
+	  
+	  
+	  
+
+    <!-- Start of main placeholder in landing page -->
+    
+	  <header>
+
+  <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+  <div class="overlay"></div>
+
+  <!-- The HTML5 video element that will create the background video on the header -->
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="images/C0870.MP4" type="video/mp4">
+  </video>
+
+  <!-- The header content -->
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">Video Header</h1>
+        <p class="lead mb-0">Using HTML5 Video and Bootstrap</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Page section example for content below the video header -->
+<section class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
+        <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
+        <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+        <p class="mb-0">
+          Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 	  
 		<main class="h-100 d-flex flex-column justify-content-center align-items-center mt-5 pt-5">
 
-      <img class="mb-6" src="images/logo fire_sphere.png" width="100%" alt="FireSphere logo">
+      <img class="mb-6" src="images/logo fire_sphere.png"logo fire_sphere.png"" width="100%" alt="FireSphere logo">
 		
 		 <div class="video-background">
     <video autoplay muted loop playsinline>
@@ -142,14 +205,13 @@
         </div>
     </section>
 
-<section class="regular-section">
-  <h1 id="events" class="d-flex justify-content-center align-items-		center glowing-text full-width-title">EVENTS</h1>
-</section>
-
+   <section class="regular-section">
+        <h2>More Content</h2>
+        <p>More content bla.</p>
+   </section>
 	  
-	   <main class="container-fluid my-4  gradient-div">
-      <div class="scroll-wrapper d-flex flex-nowrap overflow-auto px-3 gap-3 ">
-
+	   <main class="container-fluid my-4">
+      <div class="row g-3 justify-content-evenly">
 
         <!-- Card #1 -->
         <div class="col-sm-6 col-lg-4 col-xl-3">
@@ -160,7 +222,7 @@
               <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
             </div>
             <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
+              <a href="#" class="btn btn-primary">Learn more</a>
             </div>
           </div>
         </div>
@@ -174,7 +236,7 @@
               <p class="card-text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum.</p>
             </div>
             <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
+              <a href="#" class="btn btn-primary">Learn more</a>
             </div>
           </div>
         </div>
@@ -187,299 +249,24 @@
               <h5 class="card-title">Card #3</h5>
               <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
             </div>
-            <div class="card-footer p-2 text-end ">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-		  
-		 <!-- Card #4 -->
-		  <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-		  
-		 <!-- Card #5 -->
-		  <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-		  
-		 <!-- Card #6 -->
-		  <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
+            <div class="card-footer p-2 text-end">
+              <a href="#" class="btn btn-primary">Learn more</a>
             </div>
           </div>
         </div>
 		   </div>
 		  </main>
 	  
-	  
-	  
-	  <main class="container-fluid my-4 gradient-div">
-      <div class="scroll-wrapper d-flex flex-nowrap overflow-auto px-3 gap-3">
-
-
-        <!-- Card #1 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/Graspop.png" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #1</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end">
-             <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card #2 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/kaderock_man.jpg" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #2</h5>
-              <p class="card-text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum.</p>
-            </div>
-            <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card #3 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-		  
-		 <!-- Card #4 -->
-		  <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-		  
-		 <!-- Card #5 -->
-		  <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-		  
-		 <!-- Card #6 -->
-		  <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-               <a href="#" class="btn btn-primary nav-link">Open Event</a>
-			  </div>
-          </div>
-        </div>
-		   </div>
-		  </main>
-
-	  <div class="glow-area">
-  <div class="cursor-light"></div>
-  <h1 class="glowing-text">Move your mouse here</h1>
-</div>
-
-	  
-<section class="regular-section">
-  <h1 id="MERCH" class="d-flex justify-content-center align-items-		center glowing-text full-width-title">MERCH</h1>
-</section>
-	  
-	  
-	  <main class="container-fluid my-4 gradient-div">
-      <div class="scroll-wrapper d-flex flex-nowrap overflow-auto px-3 gap-3 ">
-
-
-        <!-- Card #1 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/Graspop.png" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #1</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end">
-             <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card #2 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/kaderock_man.jpg" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #2</h5>
-              <p class="card-text">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum.</p>
-            </div>
-            <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card #3 -->
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-		  
-		 <!-- Card #4 -->
-		  <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-		  
-		 <!-- Card #5 -->
-		  <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-              <a href="#" class="btn btn-primary nav-link">Open Event</a>
-            </div>
-          </div>
-        </div>
-		  
-		 <!-- Card #6 -->
-		  <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="card shadow h-100">
-            <img class="img-fluid" src="images/metal heads.jpg.webp" alt="Placeholder Image">
-            <div class="card-body">
-              <h5 class="card-title">Card #3</h5>
-              <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-            </div>
-            <div class="card-footer p-2 text-end ">
-               <a href="#" class="btn btn-primary nav-link">Open Event</a>
-			  </div>
-          </div>
-        </div>
-		   </div>
-		  </main>
-	  
-	  
-	  
-	  
-	   <section class="fixed-bg justify-content-center align-items-center"> 
-	  
-  <div class="content">
-    <h2 class="full-width-title glowing-text">Ready to Rock?</h2>
+	  <section class="join-section">
+  <div class="content-box">
+    <h2 class="full-width-title">Ready to Rock?</h2>
     <p>Join the Fire Sphere community and never miss a hard rock event again!</p>
-    <form class="d-flex justify-content-center align-items-center">
-      <input type="email" placeholder="Your email" required >
-      <button type="submit" class="nav-link">Join</button>
+    <form>
+      <input type="email" placeholder="Your email" required>
+      <button type="submit">Join</button>
     </form>
   </div>
-		  
 </section>
-
-	  
-	   <!-- A footer with socials -->
-    <footer class="shadow-lg mt-auto py-4 bg-body">
-      <div class="container d-flex justify-content-between align-items-center">
-        <p>
-          © 2020&ndash;2024 &mdash; Breda University of Applied Sciences
-        </p>
-        <ul class="list-unstyled d-flex align-items-center opacity-75">
-          <li>
-            <a href="https://www.instagram.com/bredauniversityas/" target="_blank">
-              <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <!-- End of the footer -->
-
-	  
-	  
-	<!-- glowing mouse glowing cursor-->  
-	  <script>
-  const glowArea = document.querySelector('.glow-area');
-  const cursorLight = document.querySelector('.cursor-light');
-
-  glowArea.addEventListener('mousemove', (e) => {
-    const rect = glowArea.getBoundingClientRect();
-    const x = e.clientX - rect.left - 100; // center light (100 = half of 200px width)
-    const y = e.clientY - rect.top - 100;
-
-    cursorLight.style.left = `${x}px`;
-    cursorLight.style.top = `${y}px`;
-  });
-</script>
 
 	  
   </body>
