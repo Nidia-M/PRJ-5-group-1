@@ -437,22 +437,20 @@ body, html {
     color: white;
 }
 
-/* join for updates */
 /* Makes the background image stay still */
 .join-section {
-  background-image: url('your-image.jpg'); /* Replace with your image file */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
   color: white;
-  text-align: center;
 }
 
-/* events */
-.container {
-  color:#702bc5 ;
-  
+.personadescription {
+	text-align-last: center;
+}
+
+.personaimage {text-align-last: center
 }
 
 /*cards carousel*/
