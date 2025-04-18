@@ -158,6 +158,7 @@ nav#navbar-corporate > * { /* Selects all direct children of nav#navbar-corporat
   border-radius: 10px;
   max-width: 800px;
   margin: 40px auto;
+text-align: center
 }
 
 	
