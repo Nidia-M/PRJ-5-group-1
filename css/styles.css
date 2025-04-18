@@ -437,6 +437,11 @@ body, html {
   text-align: center;
 }
 
+/* events */
+.container {
+  color:#702bc5 ;
+  
+}
 
 /*cards carousel*/
 .scroll-section {
