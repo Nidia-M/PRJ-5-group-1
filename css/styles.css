@@ -63,6 +63,14 @@ h1, h2, h3 {
     color: #ff4500; /* A fiery color */
 }
 
+.aboutustitle {  font-family: 'Hardrock', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+	text-align: center;
+	color: #c91700;
+}
+
 body {
     color: #FFFFFF
 }
@@ -147,6 +155,24 @@ nav#navbar-corporate > * { /* Selects all direct children of nav#navbar-corporat
 	color: #ffffff
   }
 
+.values-container p {
+  text-align: center;
+}
+
+.rock-block {
+  background-color: #c91700;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.personadescription p{
+ text-align: right;
+}
+
+	
 
 
 /* Make video full width and height */
