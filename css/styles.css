@@ -181,7 +181,7 @@ nav#navbar-corporate > * { /* Selects all direct children of nav#navbar-corporat
 .nav-link {
   color: black;
   background-color: white;
-  color: #000000; 
+  coulor: #00000; 
   border-radius: 25px;
   padding: 10px 20px;
   margin: 5px;
@@ -410,7 +410,7 @@ body, html {
                                                 
 /* foto */
 .fixed-bg {
-    background-image: url("../images/Band on stage - free unsplash.jpg");
+    background-image: url("../images/Band on stage - free unsplash compressed.png");
     background-attachment: fixed;
     background-position: center;
     /*background-repeat: no-repeat;*/
@@ -424,7 +424,7 @@ body, html {
 }
 
 .fixed-bga {
-    background-image: url("../images/blog_hardrock.jpg.jxl");
+    background-image: url("../images/guitar-man.png");
     background-attachment: fixed;
     background-position: center;
     /*background-repeat: no-repeat;*/
