@@ -418,7 +418,7 @@ body, html {
 }
 
 .fixed-bga {
-    background-image: url("../images/guitar-man.png");
+    background-image: url("../images/guitarman.png");
     background-attachment: fixed;
     background-position: center;
     /*background-repeat: no-repeat;*/
